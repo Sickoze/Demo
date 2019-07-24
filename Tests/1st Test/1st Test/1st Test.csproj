@@ -61,6 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DadosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DadosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Data\DadosDataSet.cs">
       <DependentUpon>DadosDataSet.xsd</DependentUpon>
     </Compile>
@@ -86,6 +91,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DadosDataSet.xsc">
+      <DependentUpon>DadosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DadosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DadosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DadosDataSet.xss">
+      <DependentUpon>DadosDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Data\DadosDataSet.xsc">
       <DependentUpon>DadosDataSet.xsd</DependentUpon>
     </None>
