@@ -16,7 +16,7 @@ namespace _2nd_Test
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FramePrincipal());
         }
     }
 }
