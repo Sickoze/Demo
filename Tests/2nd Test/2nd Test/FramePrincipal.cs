@@ -49,13 +49,31 @@ namespace _2nd_Test
             if(iselecionado > -1)
             {
                 listBoxNOME.Items[iselecionado] = txtBoxNOME.Text;
+                Ordenar();
                 txtBoxNOME.Text = string.Empty;
                 iselecionado = -1;
                 buttonCADASTRAR.Text = "Cadastrar";
                 return;
             }
             listBoxNOME.Items.Add(txtBoxNOME.Text);
+            Ordenar();
             txtBoxNOME.Text = string.Empty;
+        }
+
+        private void Ordenar()
+        {
+            ListBox.ObjectCollection lista = listBoxNOME.Items;
+            List<string> listastring = new List<string>();
+            foreach (var item in lista)
+            {
+                listastring.Add(item.ToString());
+            }
+            listastring = (from s in listastring select s).OrderBy(x => x).ToList();
+            listBoxNOME.Items.Clear();
+            foreach(var item in listastring)
+            {
+                listBoxNOME.Items.Add(item);
+            }
         }
     }
 }
