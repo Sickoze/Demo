@@ -32,8 +32,8 @@
             this.buttonVOLTAR = new System.Windows.Forms.Button();
             this.labelNOME = new System.Windows.Forms.Label();
             this.txtBoxNOME = new System.Windows.Forms.TextBox();
-            this.listBoxNOME = new System.Windows.Forms.ListBox();
-            this.buttonCADASTRAR = new System.Windows.Forms.Button();
+            this.comboBoxLISTA = new System.Windows.Forms.ComboBox();
+            this.labelLISTA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonPRÓXIMO
@@ -72,36 +72,47 @@
             this.txtBoxNOME.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxNOME.Location = new System.Drawing.Point(72, 6);
             this.txtBoxNOME.Name = "txtBoxNOME";
-            this.txtBoxNOME.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxNOME.Size = new System.Drawing.Size(321, 20);
             this.txtBoxNOME.TabIndex = 8;
             this.txtBoxNOME.Validating += new System.ComponentModel.CancelEventHandler(this.txtBoxNOME_Validating);
             // 
-            // listBoxNOME
+            // comboBoxLISTA
             // 
-            this.listBoxNOME.FormattingEnabled = true;
-            this.listBoxNOME.Location = new System.Drawing.Point(13, 54);
-            this.listBoxNOME.Name = "listBoxNOME";
-            this.listBoxNOME.Size = new System.Drawing.Size(159, 121);
-            this.listBoxNOME.TabIndex = 13;
-            this.listBoxNOME.DoubleClick += new System.EventHandler(this.listBoxNOME_DoubleClick);
+            this.comboBoxLISTA.FormattingEnabled = true;
+            this.comboBoxLISTA.Items.AddRange(new object[] {
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "abelardo",
+            "bacia",
+            "carro",
+            "dedo",
+            "elefante",
+            "filho"});
+            this.comboBoxLISTA.Location = new System.Drawing.Point(72, 48);
+            this.comboBoxLISTA.Name = "comboBoxLISTA";
+            this.comboBoxLISTA.Size = new System.Drawing.Size(321, 21);
+            this.comboBoxLISTA.TabIndex = 16;
             // 
-            // buttonCADASTRAR
+            // labelLISTA
             // 
-            this.buttonCADASTRAR.Location = new System.Drawing.Point(178, 4);
-            this.buttonCADASTRAR.Name = "buttonCADASTRAR";
-            this.buttonCADASTRAR.Size = new System.Drawing.Size(75, 23);
-            this.buttonCADASTRAR.TabIndex = 14;
-            this.buttonCADASTRAR.Text = "Cadastrar";
-            this.buttonCADASTRAR.UseVisualStyleBackColor = true;
-            this.buttonCADASTRAR.Click += new System.EventHandler(this.buttonCADASTRAR_Click);
+            this.labelLISTA.AutoSize = true;
+            this.labelLISTA.Location = new System.Drawing.Point(13, 55);
+            this.labelLISTA.Name = "labelLISTA";
+            this.labelLISTA.Size = new System.Drawing.Size(29, 13);
+            this.labelLISTA.TabIndex = 17;
+            this.labelLISTA.Text = "Lista";
             // 
             // FramePrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 300);
-            this.Controls.Add(this.buttonCADASTRAR);
-            this.Controls.Add(this.listBoxNOME);
+            this.Controls.Add(this.labelLISTA);
+            this.Controls.Add(this.comboBoxLISTA);
             this.Controls.Add(this.txtBoxNOME);
             this.Controls.Add(this.labelNOME);
             this.Controls.Add(this.buttonVOLTAR);
@@ -121,8 +132,8 @@
         private System.Windows.Forms.Button buttonVOLTAR;
         private System.Windows.Forms.Label labelNOME;
         private System.Windows.Forms.TextBox txtBoxNOME;
-        private System.Windows.Forms.ListBox listBoxNOME;
-        private System.Windows.Forms.Button buttonCADASTRAR;
+        private System.Windows.Forms.ComboBox comboBoxLISTA;
+        private System.Windows.Forms.Label labelLISTA;
     }
 }
 
