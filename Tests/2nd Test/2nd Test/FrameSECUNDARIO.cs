@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace _2nd_Test
 {
-    public partial class FramePRINCIPAL : Form
+    public partial class FrameSECUNDARIO : Form
     {
-        public FramePRINCIPAL()
+        public FrameSECUNDARIO()
         {
             InitializeComponent();
-        }
-        private void SairToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace _2nd_Test
 {
-    partial class FramePrincipal
+    partial class FramePRINCIPAL
     {
         /// <summary>
         /// Variável de designer necessária.

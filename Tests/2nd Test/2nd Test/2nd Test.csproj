@@ -66,16 +66,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DadosDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FramePrincipal.cs">
+    <Compile Include="FramePRINCIPAL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FramePrincipal.Designer.cs">
-      <DependentUpon>FramePrincipal.cs</DependentUpon>
+    <Compile Include="FramePRINCIPAL.Designer.cs">
+      <DependentUpon>FramePRINCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameSECUNDARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameSECUNDARIO.Designer.cs">
+      <DependentUpon>FrameSECUNDARIO.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FramePrincipal.resx">
-      <DependentUpon>FramePrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="FramePRINCIPAL.resx">
+      <DependentUpon>FramePRINCIPAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
