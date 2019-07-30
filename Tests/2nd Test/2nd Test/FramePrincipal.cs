@@ -16,5 +16,9 @@ namespace _2nd_Test
         {
             InitializeComponent();
         }
+        private void SairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
