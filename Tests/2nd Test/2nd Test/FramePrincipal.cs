@@ -20,5 +20,17 @@ namespace _2nd_Test
         {
             Application.Exit();
         }
+
+        private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrameCADASTRAR Abrir = new FrameCADASTRAR();
+            Abrir.ShowDialog();
+        }
+
+        private void containerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrameCONSULTAR Abrir = new FrameCONSULTAR();
+            Abrir.ShowDialog();
+        }
     }
 }

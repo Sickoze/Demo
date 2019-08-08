@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _2nd_Test
 {
-    public partial class FrameSECUNDARIO : Form
+    public partial class FrameCONSULTAR : Form
     {
-        public FrameSECUNDARIO()
+        public FrameCONSULTAR()
         {
             InitializeComponent();
         }

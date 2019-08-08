@@ -48,7 +48,7 @@
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(405, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(484, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,13 +65,15 @@
             // 
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.arquivoToolStripMenuItem.Text = "Arquivo";
+            this.arquivoToolStripMenuItem.Text = "Cadastrar";
+            this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.arquivoToolStripMenuItem_Click);
             // 
             // containerToolStripMenuItem
             // 
             this.containerToolStripMenuItem.Name = "containerToolStripMenuItem";
             this.containerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.containerToolStripMenuItem.Text = "Container";
+            this.containerToolStripMenuItem.Text = "Consultar";
+            this.containerToolStripMenuItem.Click += new System.EventHandler(this.containerToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
@@ -96,15 +98,15 @@
             // 
             this.splitContainer1.Panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.splitContainer1.Size = new System.Drawing.Size(405, 276);
-            this.splitContainer1.SplitterDistance = 135;
+            this.splitContainer1.Size = new System.Drawing.Size(484, 337);
+            this.splitContainer1.SplitterDistance = 161;
             this.splitContainer1.TabIndex = 20;
             // 
             // FramePRINCIPAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 300);
+            this.ClientSize = new System.Drawing.Size(484, 361);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
