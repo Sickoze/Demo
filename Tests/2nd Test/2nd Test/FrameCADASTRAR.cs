@@ -64,7 +64,7 @@ namespace _2nd_Test
                 comando = Conexão.CreateCommand();
                 comando.CommandText = "INSERT INTO Base(`Nome do Proprietário`, `Nome do Bar`, `Endereço`) VALUES (@varNome, @varBar,@varEndereço);";
                 comando.Parameters.AddWithValue("varNome", textBoxPROPRIETÁRIO.Text.Trim());
-                comando.Parameters.AddWithValue("varBar", index + textBoxBAR.Text.Trim());
+                comando.Parameters.AddWithValue("varBar", listBoxOPÇÕES.Items[index].ToString() + textBoxBAR.Text.Trim());
                 comando.Parameters.AddWithValue("varEndereço", textBoxENDEREÇO.Text.Trim());
 
                 int valorRetorno = comando.ExecuteNonQuery();
@@ -88,8 +88,6 @@ namespace _2nd_Test
         private void listBoxOPÇÕES_Click(object sender, EventArgs e)
         {
             index = listBoxOPÇÕES.SelectedIndex;
-            textBoxBAR.Text = listBoxOPÇÕES.Items[index].ToString();
-            index = -1;
         }
     }
 }
