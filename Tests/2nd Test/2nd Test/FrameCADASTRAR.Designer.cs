@@ -43,7 +43,7 @@
             this.checkBoxBOMBEIRO = new System.Windows.Forms.CheckBox();
             this.checkBoxPREFEITURA = new System.Windows.Forms.CheckBox();
             this.checkBoxSANITARIO = new System.Windows.Forms.CheckBox();
-            this.checkBoxSONÓRA = new System.Windows.Forms.CheckBox();
+            this.checkBoxSONÓRO = new System.Windows.Forms.CheckBox();
             this.checkBoxCIVIL = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -182,15 +182,15 @@
             this.checkBoxSANITARIO.Text = "Alvará Sanitário Municipal";
             this.checkBoxSANITARIO.UseVisualStyleBackColor = true;
             // 
-            // checkBoxSONÓRA
+            // checkBoxSONÓRO
             // 
-            this.checkBoxSONÓRA.AutoSize = true;
-            this.checkBoxSONÓRA.Location = new System.Drawing.Point(13, 236);
-            this.checkBoxSONÓRA.Name = "checkBoxSONÓRA";
-            this.checkBoxSONÓRA.Size = new System.Drawing.Size(185, 17);
-            this.checkBoxSONÓRA.TabIndex = 15;
-            this.checkBoxSONÓRA.Text = "Alvará Orgão Municipal Ambiental";
-            this.checkBoxSONÓRA.UseVisualStyleBackColor = true;
+            this.checkBoxSONÓRO.AutoSize = true;
+            this.checkBoxSONÓRO.Location = new System.Drawing.Point(13, 236);
+            this.checkBoxSONÓRO.Name = "checkBoxSONÓRO";
+            this.checkBoxSONÓRO.Size = new System.Drawing.Size(185, 17);
+            this.checkBoxSONÓRO.TabIndex = 15;
+            this.checkBoxSONÓRO.Text = "Alvará Orgão Municipal Ambiental";
+            this.checkBoxSONÓRO.UseVisualStyleBackColor = true;
             // 
             // checkBoxCIVIL
             // 
@@ -210,7 +210,6 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Próximo";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -267,7 +266,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.checkBoxCIVIL);
-            this.Controls.Add(this.checkBoxSONÓRA);
+            this.Controls.Add(this.checkBoxSONÓRO);
             this.Controls.Add(this.checkBoxSANITARIO);
             this.Controls.Add(this.checkBoxPREFEITURA);
             this.Controls.Add(this.checkBoxBOMBEIRO);
@@ -309,7 +308,7 @@
         private System.Windows.Forms.CheckBox checkBoxBOMBEIRO;
         private System.Windows.Forms.CheckBox checkBoxPREFEITURA;
         private System.Windows.Forms.CheckBox checkBoxSANITARIO;
-        private System.Windows.Forms.CheckBox checkBoxSONÓRA;
+        private System.Windows.Forms.CheckBox checkBoxSONÓRO;
         private System.Windows.Forms.CheckBox checkBoxCIVIL;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;

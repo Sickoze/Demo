@@ -20,38 +20,6 @@ namespace _2nd_Test
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string Connection = ConfigurationManager.ConnectionStrings["MySQLConnectionString"].ToString();
-            MySqlConnection Conexão = new MySqlConnection(Connection);
-
-            try
-            {
-                Conexão.Open();
-                MySqlCommand comando = new MySqlCommand();
-                comando = Conexão.CreateCommand();
-
-                comando.CommandText = "SELECT `Nome do Bar` FROM Base WHERE id = 1;";
-                MySqlDataReader Reader = comando.ExecuteReader();
-                while (Reader.Read())
-                {
-                    if (Reader["Nome do Bar"] != null)
-                    {
-                        MessageBox.Show(Reader["Nome do Bar"].ToString());
-                    }
-                }
-            }
-            catch (MySqlException sqle)
-            {
-                MessageBox.Show("Erro de Acesso ao MySQL: " + sqle.Message, "Erro");
-            }
-            finally
-            {
-                Conexão.Close();
-            }
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             string Connection = ConfigurationManager.ConnectionStrings["MySQLConnectionString"].ToString();
@@ -62,11 +30,9 @@ namespace _2nd_Test
                 Conexão.Open();
                 MySqlCommand comando = new MySqlCommand();
                 comando = Conexão.CreateCommand();
-                comando.CommandText = "INSERT INTO Base(`Proprietário`,`Bar`,`Rua`,`Número`,`Sonóro`,`Prefeitura`,`Civil`,`Bombeiros`,`Sanitário`,`TIC`) VALUES (@varProprietário, @varBar,@varRua,@varSonóro,@varPrefeitura,@varCivil,@varBombeiros,@varSanitário,@varTIC);";
+                comando.CommandText = "INSERT INTO Base(`Proprietário`,`Bar`) VALUES (@varProprietário,@varBar);";
                 comando.Parameters.AddWithValue("varProprietário", textBoxPROPRIETÁRIO.Text.Trim());
                 comando.Parameters.AddWithValue("varBar", listBoxOPÇÕES.Items[index].ToString() + textBoxBAR.Text.Trim());
-                comando.Parameters.AddWithValue("varRua", textBoxENDEREÇO.Text.Trim());
-                comando.Parameters.AddWithValue("varNúmero", textBoxNÚMERO.Text.Trim());
                 int valorRetorno = comando.ExecuteNonQuery();
                 if (valorRetorno < 1)
                 {
