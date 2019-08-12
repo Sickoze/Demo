@@ -62,11 +62,11 @@ namespace _2nd_Test
                 Conexão.Open();
                 MySqlCommand comando = new MySqlCommand();
                 comando = Conexão.CreateCommand();
-                comando.CommandText = "INSERT INTO Base(`Nome do Proprietário`, `Nome do Bar`, `Endereço`) VALUES (@varNome, @varBar,@varEndereço);";
-                comando.Parameters.AddWithValue("varNome", textBoxPROPRIETÁRIO.Text.Trim());
+                comando.CommandText = "INSERT INTO Base(`Proprietário`,`Bar`,`Rua`,`Número`,`Sonóro`,`Prefeitura`,`Civil`,`Bombeiros`,`Sanitário`,`TIC`) VALUES (@varProprietário, @varBar,@varRua,@varSonóro,@varPrefeitura,@varCivil,@varBombeiros,@varSanitário,@varTIC);";
+                comando.Parameters.AddWithValue("varProprietário", textBoxPROPRIETÁRIO.Text.Trim());
                 comando.Parameters.AddWithValue("varBar", listBoxOPÇÕES.Items[index].ToString() + textBoxBAR.Text.Trim());
-                comando.Parameters.AddWithValue("varEndereço", textBoxENDEREÇO.Text.Trim());
-
+                comando.Parameters.AddWithValue("varRua", textBoxENDEREÇO.Text.Trim());
+                comando.Parameters.AddWithValue("varNúmero", textBoxNÚMERO.Text.Trim());
                 int valorRetorno = comando.ExecuteNonQuery();
                 if (valorRetorno < 1)
                 {
